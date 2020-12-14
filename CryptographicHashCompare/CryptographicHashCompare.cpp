@@ -10,7 +10,11 @@
 #include "openssl/sha.h"
 #include "openssl/whrlpool.h"
 #include "openssl/ripemd.h"
-#include "CryptographicHashCompare.h"
+
+// This is normally in the header file but this way it doesn't have to be in a seperate file
+int main();
+long long hash(unsigned char *(hash_function)(const unsigned char *d, size_t n, unsigned char *md), int bufferSize, const char* fileName);
+void printResults(std::map<const char *, long long> durations, long long count);
 
 int main()
 {
