@@ -11,7 +11,9 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
+CryptographicHashCompare/[Dd]ebug/
+[Dd]ebug/*
+![Dd]ebug/password_lists/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
